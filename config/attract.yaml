@@ -1,0 +1,139 @@
+# updated to include examples of text_layer, panning_layer, group_layer, and markup_layer
+
+Sequence:
+    - LastScores:
+        Font: small
+        FontStyle: 
+            interior_color: [130,230,130]
+            line_width: 1
+            line_color: [60,60,60]
+        Background: rink_background
+        lampshow: attract_show_2
+        sound: goal_horn
+        duration: 4.0
+    - Animation:
+        Name: game_logo
+        lampshow: attract_show_2
+        sound: crowd_noise
+        duration: 2.0
+    - Animation:
+        Name: names
+        lampshow: attract_show_2
+        sound: crowd_noise
+        duration: 2.0
+    # - text_layer:
+    #     x: .50
+    #     y: -4
+    #     v_justify: center
+    #     h_justify: bottom
+    #     Text: "By Alex Groenewold"
+    #     Font: med
+    #     duration: 3.0
+    # - text_layer:
+    #     x: .50
+    #     y: -4
+    #     v_justify: center
+    #     h_justify: bottom
+    #     Text: "Andy Soucy"        
+    #     Font: med
+    #     duration: 3.0
+    # - text_layer:
+    #     x: .50   # 50% of the display width
+    #     y: -5    # 5 "dots" up from the bottom
+    #     h_justify: center
+    #     v_justify: bottom
+    #     Text: "and Ryan Gallagher"        
+    #     Font: med
+    #     duration: 3.0
+#     - panning_layer:
+#         width: 500
+#         height: 500        
+#         origin_x: 0
+#         origin_y: -130 
+#         scroll_x: 0
+#         scroll_y: 2
+#         frames_per_movement: 2 
+#         bounce: False
+#         contents:
+#             group_layer:
+#                 width: 500
+#                 height: 500
+#                 contents:
+#                     - animation_layer:
+#                         name: dark_chrome
+#                     - markup_layer:
+#                         width: 450
+#                         Bold: 
+#                             Font: med
+#                             FontStyle: blueish
+#                         Normal: 
+#                             Font: small
+#                             FontStyle: blueish
+#                         Message: 
+#                             - "#Special Thanks to:#"
+#                             - "#Gerry Stellenberg"
+#                             - "Adam Preble#"
+#                             - "#Josh (Rosh)"
+#                             - "[Scott Danesi]"
+#                             - "[(Deadpin) Matt"
+#                             - "Mark (Snux)]"
+#         duration: 4.0        
+# ## Random Text #############################################################    
+# ## This section will display a Combo style text where the contents will 
+# ##   be selected at random line from Text list
+# ## You can use header text of opt out of it by supplying "none" as the header.
+# ## Feature enhancement for the awesome @scottdanesi based on his code
+# ############################################################################
+#     - RandomText:
+#         Header: Instructions ## omit line completely to specify 'None'
+#         TextOptions:
+#             - Text:
+#                 - ""
+#                 - do not drink
+#                 - gasoline
+#                 - ""
+#             - Text:
+#                 - ""
+#                 - ""
+#                 - do not tip
+#                 - vending machines
+#                 - ""
+#             - Text: ["", "", "do not swim in", "the ocean", ""]
+#             - Text: don't panic
+#             - Text: [ "", "do not enrich" ,"uranium without","a permit"]
+#             - Text: [ "", "", "keep away from", "high voltage", ""]
+#             - Text: "avoid green meat"
+#             - Text: [ "", "", "do not lick,festering wounds",""]
+#             - Text: "own a gas mask"
+#             - Text: [ "", "", "do not pick","up hitchhikers",""] 
+#             - Text: [ "", "", "build a fallout","shelter", ""]
+#             - Text: [ "", "secure your", "gas mask before", "assisting others"]
+#             - Text: [ "", "do not stare", "at overheating", "reactors"]
+#         Font: small
+#         Animation: dark_chrome
+#         FontStyle: weird
+#         lampshow: attract_show_2
+#         duration: 4.0
+    - Animation:
+        Name: kane
+        sound: target_bank 
+        duration: 5.0             
+    # - Combo:
+    #     Text:
+    #         - "Terminator"
+    #         - ""
+    #         - "2.0"
+    #     Font: med
+    #     # Animation: chrome
+    #     FontStyle: blueish
+    #     lampshow: attract_show_2
+    #     duration: 2.0
+    # - HighScores:
+    #     Font: tiny
+    #     FontStyle: weird
+    #     Background: dark_chrome
+    #     Order:
+    #         - player
+    #         - category
+    #         - score
+    #     duration: 4.0 # increase duration since it is now the length of all high score frames, together!

@@ -1,0 +1,10 @@
+Audits: {Avg Ball Time: '0:11', Avg Extra Balls: 0, Avg Game Time: '1:08', Avg Score: 12878,
+  Balls Played: 51, Games Played: 17, Games Started: 203}
+ClassicHighScores:
+- {date: 'Tue Dec 19 15:43:37 2017', inits: AAAAAAAAAA, score: 13420}
+- {date: 'Tue Dec 19 13:13:05 2017', inits: AAAAAAAAAA, score: 9470}
+- {date: 'Wed Dec 20 05:27:18 2017', inits: AAAAAAAAAA, score: 5160}
+- {date: 'Tue Dec 19 15:41:48 2017', inits: AAAAAAAAAA, score: 4560}
+- {date: 'Tue Dec 19 13:13:56 2017', inits: AAAAAAAAAA, score: 4405}
+LoopsHighScoreData:
+- {inits: GSS, score: 5}
